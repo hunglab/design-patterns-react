@@ -44,12 +44,12 @@ And this is what it looks like from a high-level perspective:
 ### Optimize paintwork
 
 ![](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/pipeline-paint.png)
-	<center>Pixel pipeline without the layout step</center>
+	<p align="center">Pixel pipeline without the layout step</p>
 
 ### Use composited-only transformations
 
 ![The pixel pipeline without Layout and Paint](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/pipeline-composite.png)
-	<center>The pixel pipeline without Layout and Paint</center>
+	<p align="center">The pixel pipeline without Layout and Paint</p>
 
 **Below is the list of changes the browser can do cheaply at compositing time:**
 - Re-positioning with transform: translate(mpx, npx)
@@ -66,7 +66,7 @@ So, depending on the change we make to the DOM, the process will be one of these
 **Try to reduce the main thread's workload**
 
 ![CSS properties and their initial step in the pixel pipeline](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/Twitter-post---55.png)
-	<center>CSS properties and their initial step in the pixel pipeline</center>
+	<p align="center">CSS properties and their initial step in the pixel pipeline</p>
 
 **Make sure your JavaScript callbacks catch the train!**
 - If you set the interval to repeat your code every 16.7ms, your code could run at any point during each 16.7ms slot.
