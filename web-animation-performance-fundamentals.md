@@ -34,6 +34,7 @@ And this is what it looks like from a high-level perspective:
 - Compositing – the browser: Now, I should combine these bitmaps in the defined order to form the final frame.
 
 ![The pixel pipeline](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/pipeline-1.png)
+	
 <center>The pixel pipeline</center>
 
 - Any change to an element's geometry (when you change the height, width, left, top, bottom, right, padding, margin, and so on) involves the whole pipeline.
@@ -42,11 +43,13 @@ And this is what it looks like from a high-level perspective:
 
 ### Optimize paintwork
 
-![](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/pipeline-paint.png)<center>Pixel pipeline without the layout step</center>
+![](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/pipeline-paint.png)
+	<center>Pixel pipeline without the layout step</center>
 
 ### Use composited-only transformations
 
-![The pixel pipeline without Layout and Paint](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/pipeline-composite.png)<center>The pixel pipeline without Layout and Paint</center>
+![The pixel pipeline without Layout and Paint](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/pipeline-composite.png)
+	<center>The pixel pipeline without Layout and Paint</center>
 
 **Below is the list of changes the browser can do cheaply at compositing time:**
 - Re-positioning with transform: translate(mpx, npx)
@@ -62,7 +65,8 @@ So, depending on the change we make to the DOM, the process will be one of these
 
 **Try to reduce the main thread's workload**
 
-![CSS properties and their initial step in the pixel pipeline](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/Twitter-post---55.png)<center>CSS properties and their initial step in the pixel pipeline</center>
+![CSS properties and their initial step in the pixel pipeline](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/Twitter-post---55.png)
+	<center>CSS properties and their initial step in the pixel pipeline</center>
 
 **Make sure your JavaScript callbacks catch the train!**
 - If you set the interval to repeat your code every 16.7ms, your code could run at any point during each 16.7ms slot.
