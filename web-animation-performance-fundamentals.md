@@ -35,7 +35,7 @@ And this is what it looks like from a high-level perspective:
 
 ![The pixel pipeline](https://www.freecodecamp.org/news/content/images/size/w1600/2022/02/pipeline-1.png)
 	
-<center>The pixel pipeline</center>
+<p align="center">The pixel pipeline</p>
 
 - Any change to an element's geometry (when you change the height, width, left, top, bottom, right, padding, margin, and so on) involves the whole pipeline.
 
