@@ -10,4 +10,5 @@ Developers can use this knowledge to improve UI performance
 
 ---
 [1. Web Animation Performance Fundamentals](web-animation-performance-fundamentals.md)
+
 [2. How browser work](how-browser-work.md)
